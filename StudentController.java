@@ -10,7 +10,7 @@ public class StudentController implements  InterfaceUserController<Student>{
         int maxId = 0;
         if(!sg.getStudentList().isEmpty())
         maxId = sg.getStudentList().get(sg.getStudentList().size()-1).getStudentID()+1;
-        Student st = new Student(maxId, lastName, secondName, lastName);
+        Student st = new Student(maxId, name, secondName, lastName);
         sg.addStudent(st);
     }
 

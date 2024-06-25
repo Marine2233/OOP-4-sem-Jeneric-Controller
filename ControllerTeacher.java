@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ControllerTeacher implements InterfaceUserController<Teacher> {
 
 private Scanner sc = new Scanner(System.in);
-UserView<Teacher> userView = new UserView<>();
+// UserView<Teacher> userView = new UserView<>();
 private List<Teacher>list = new ArrayList<>();
 
 
@@ -92,9 +92,8 @@ public void remove(){
 
 public void printTeacherList(){
     for (Teacher teacher : list) {
-        System.out.println(teacher);
-        
+        System.out.println(teacher);  
+        }
     }
-}
 }
 
